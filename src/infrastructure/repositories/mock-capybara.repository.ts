@@ -4,14 +4,24 @@ import { CapybaraEntity } from '../../domain/entities/capybara.entity';
 
 @Injectable()
 export class MockCapybaraRepository implements CapybaraRepository {
-    getHabits(): Promise<CapybaraEntity> {
-        throw new Error('Method not implemented.');
+    async getHabits(): Promise<Pick<CapybaraEntity, 'habits' | 'imageUrl'>> {
+        return Promise.resolve({
+            habits: ['swimming', 'sunbathing', 'grazing'],
+            imageUrl: 'https://example.com/capybara-habits.png',
+        });
     }
-    getFood(): Promise<CapybaraEntity> {
-        throw new Error('Method not implemented.');
+    async getFood(): Promise<Pick<CapybaraEntity, 'favoriteFood'>> {
+        return Promise.resolve({
+            favoriteFood: {
+                name: 'Water plants',
+                originCountries: ['Brazil', 'Venezuela'],
+            },
+        });
     }
-    getCountries(): Promise<CapybaraEntity> {
-        throw new Error('Method not implemented.');
+    async getCountries(): Promise<Pick<CapybaraEntity, 'nativeCountries'>> {
+        return Promise.resolve({
+            nativeCountries: ['Brazil', 'Colombia', 'Venezuela', 'Argentina', 'Peru'],
+        });
     }
     async getCapybara(type: '2d' | '3d'): Promise<CapybaraEntity> {
         return {
