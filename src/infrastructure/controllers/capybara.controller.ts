@@ -1,4 +1,4 @@
-import { Controller, Get, Query } from '@nestjs/common';
+import { Controller, Get, Query, Param } from '@nestjs/common';
 import { CapybaraService } from '../../application/services/capybara.service';
 import { CapybaraFoodDto, CapybaraHabitsDto, CapybaraResponseDto, CapybaraCountriesDto } from '../../domain/dtos/capybara-response.dto';
 
@@ -24,6 +24,11 @@ export class CapybaraController {
     @Get('countries')
     async getCountries(): Promise<CapybaraCountriesDto> {
         return this.service.getCountries();
+    }
+
+    @Get(':id')
+    async getById(@Param('id') id: string): Promise<CapybaraResponseDto | null> {
+        return this.service.getById(id);
     }
 
 } 

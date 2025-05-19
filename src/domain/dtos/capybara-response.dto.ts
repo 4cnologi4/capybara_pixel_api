@@ -3,12 +3,12 @@ export class CapybaraResponseDto {
   type: '2d' | '3d';
   imageUrl: string;
   details: string;
-  habits: string[];
+/*   habits: string[];
   favoriteFood: {
     name: string;
     originCountries: string[];
   };
-  nativeCountries: string[];
+  nativeCountries: string[]; */
 }
 
 export class CapybaraHabitsDto {

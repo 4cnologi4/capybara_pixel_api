@@ -5,4 +5,5 @@ export interface CapybaraRepository {
   getHabits(): Promise<Pick<CapybaraEntity, 'habits' | 'imageUrl'>>;
   getFood(): Promise<Pick<CapybaraEntity, 'favoriteFood'>>;
   getCountries(): Promise<Pick<CapybaraEntity, 'nativeCountries'>>;
+  getById(id: string): Promise<CapybaraEntity | null>;
 }

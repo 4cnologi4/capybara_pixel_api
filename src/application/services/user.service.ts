@@ -2,11 +2,12 @@ import { Injectable, Inject } from '@nestjs/common';
 import { UserRepositoryInterface } from '../../domain/interfaces/user.repository.interface';
 import { UserEntity } from '../../domain/entities/user.entity';
 import { CreateUserDto } from '../../domain/dtos/create-user.dto';
+import { USER_REPOSITORY } from 'src/core/constants/repository-tokens.constants';
 
 @Injectable()
 export class UserService {
     constructor(
-        @Inject('USER_REPOSITORY')
+        @Inject(USER_REPOSITORY)
         private readonly userRepository: UserRepositoryInterface,
     ) { }
 

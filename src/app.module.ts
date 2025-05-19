@@ -6,12 +6,7 @@ import { MongoUserRepository } from './infrastructure/repositories/mongo.user.re
 import { CapybaraController } from './infrastructure/controllers/capybara.controller';
 import { CapybaraService } from './application/services/capybara.service';
 import { MockCapybaraRepository } from './infrastructure/repositories/mock-capybara.repository';
-
-// Add this line to create a token for the interface
-export const USER_REPOSITORY = 'USER_REPOSITORY';
-
-// Define a token for the repository
-export const CAPYBARA_REPOSITORY = 'CAPYBARA_REPOSITORY';
+import { USER_REPOSITORY, CAPYBARA_REPOSITORY } from './core/constants/repository-tokens.constants';
 
 @Module({
   imports: [],
@@ -20,12 +15,12 @@ export const CAPYBARA_REPOSITORY = 'CAPYBARA_REPOSITORY';
     AppService,
     UserService,
     {
-      provide: 'USER_REPOSITORY', // Match the token used in @Inject()
+      provide: USER_REPOSITORY,
       useClass: MongoUserRepository,
     },
     CapybaraService,
     {
-      provide: 'CAPYBARA_REPOSITORY', // Use the token
+      provide: CAPYBARA_REPOSITORY,
       useClass: MockCapybaraRepository,
     },
   ],
