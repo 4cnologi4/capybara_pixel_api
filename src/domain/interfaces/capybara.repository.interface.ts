@@ -1,10 +1,11 @@
-import { CapybaraNameEntity, CapybaraEntity } from '../entities/capybara.entity';
+import { CapybaraNameEntity, CapybaraEntity, CapybaraCountryEntity, CapybaraFoodEntity, CapybaraHabitatEntity, CapybaraActivitiesEntity } from '../entities/capybara.entity';
 
 export interface ICapybaraRepository {
   getCapybara(type: '2d' | '3d'): Promise<CapybaraEntity>;
-  getHabits(): Promise<Pick<CapybaraEntity, 'habits' | 'imageUrl'>>;
-  getFood(): Promise<Pick<CapybaraEntity, 'favoriteFood'>>;
-  getCountries(): Promise<Pick<CapybaraEntity, 'nativeCountries'>>;
   getById(id: string): Promise<CapybaraEntity | null>;
+  getHabits(): Promise<CapybaraHabitatEntity[]>;
+  getActivities(): Promise<CapybaraActivitiesEntity[]>;
+  getFood(): Promise<CapybaraFoodEntity[]>;
+  getCountries(): Promise<CapybaraCountryEntity[]>;
   getNames(): Promise<CapybaraNameEntity[]>;
 }

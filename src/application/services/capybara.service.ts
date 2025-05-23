@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@nestjs/common';
 import { ICapybaraRepository } from '../../domain/interfaces/capybara.repository.interface';
-import { CapybaraNamesDto, CapybaraFoodDto, CapybaraHabitsDto, CapybaraResponseDto, CapybaraCountriesDto } from '../../domain/dtos/capybara-response.dto';
+import { CapybaraNamesDto, CapybaraFoodDto, CapybaraResponseDto, CapybaraCountriesDto, CapybaraHabitatDto, CapybaraActivitiesDto } from '../../domain/dtos/capybara-response.dto';
 import { CAPYBARA_REPOSITORY } from 'src/core/constants/repository-tokens.constants';
 
 @Injectable()
@@ -38,27 +38,24 @@ export class CapybaraService {
         } : null;
     }
 
-    async getHabits(): Promise<CapybaraHabitsDto> {
+    async getHabits(): Promise<CapybaraHabitatDto[]> {
         const data = await this.repository.getHabits();
-        return {
-            habits: data.habits,
-            imageUrl: data.imageUrl,
-        };
+        return Object.values(data);
     }
 
-    async getFood(): Promise<CapybaraFoodDto> {
+    async getActivities(): Promise<CapybaraActivitiesDto[]> {
+        const data = await this.repository.getActivities();
+        return Object.values(data);
+    }
+
+    async getFood(): Promise<CapybaraFoodDto[]> {
         const data = await this.repository.getFood();
-        return {
-            food: data.favoriteFood.name,
-            originCountries: data.favoriteFood.originCountries,
-        };
+        return Object.values(data);
     }
 
-    async getCountries(): Promise<CapybaraCountriesDto> {
+    async getCountries(): Promise<CapybaraCountriesDto[]> {
         const data = await this.repository.getCountries();
-        return {
-            countries: data.nativeCountries,
-        };
+        return Object.values(data);
     }
 
     async getNames(): Promise<CapybaraNamesDto[]> {

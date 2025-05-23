@@ -16,16 +16,42 @@ export class CapybaraHabitsDto {
     imageUrl: string;
 }
 
-export class CapybaraFoodDto {
-    food: string;
-    originCountries: string[];
-}
-
 export class CapybaraCountriesDto {
-    countries: string[];
+    name: string;
+    continent: string;
+    flagIcon: string;
 }
 
 export class CapybaraNamesDto {
     name: string;
     countries: string[];
-} 
+}
+
+export class CapybaraFoodDto {
+    food: string;
+    scientificName: string;
+    countries: string[];
+}
+
+export class CapybaraHabitatDto {
+    habitat: string;
+    description: string;
+    freshwaterAssociated: boolean;
+}
+
+export class CapybaraActivitiesDto {
+    activity: string;
+    description: string;
+    type: string;
+    seasonalPattern: {
+        frequency: string;
+        timeOfDay: string;
+        climateInfluence: string;
+    };
+    averageDuration: string;
+    biologicalImportance: string;
+    energyExpenditure: string;
+    riskLevel: string;
+    relationWithOtherAnimals: string;
+    humanInfluence: string;
+}

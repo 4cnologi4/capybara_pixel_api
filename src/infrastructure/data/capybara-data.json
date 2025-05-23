@@ -1,21 +1,481 @@
 {
   "names": [
-    { "name": "capibara", "countries": ["argentina", "bolivia", "ecuador", "panamá", "paraguay", "perú", "uruguay"] },
-    { "name": "capiguara", "countries": ["bolivia"] },
-    { "name": "capihuara", "countries": ["bolivia"] },
-    { "name": "capincho", "countries": ["argentina", "ecuador", "paraguay", "uruguay"] },
-    { "name": "capivara", "countries": ["brasil"] },
-    { "name": "carpincho", "countries": ["argentina", "bolivia", "ecuador", "paraguay", "perú", "uruguay"] },
-    { "name": "chancho de agua", "countries": ["argentina"] },
-    { "name": "chigüire", "countries": ["venezuela"] },
-    { "name": "chigüiro", "countries": ["colombia"] },
-    { "name": "jomo", "countries": ["colombia"] },
-    { "name": "kapi'yvá", "countries": ["paraguay"] },
-    { "name": "paqui", "countries": ["colombia"] },
-    { "name": "piro-piro", "countries": ["venezuela"] },
-    { "name": "ponche", "countries": ["colombia"] },
-    { "name": "poncho", "countries": ["panamá", "paraguay"] },
-    { "name": "ronsoco", "countries": ["perú"] },
-    { "name": "samani", "countries": ["perú"] }
+    {
+      "name": "capibara",
+      "countries": [
+        "argentina",
+        "bolivia",
+        "ecuador",
+        "panamá",
+        "paraguay",
+        "perú",
+        "uruguay"
+      ]
+    },
+    {
+      "name": "capiguara",
+      "countries": [
+        "bolivia"
+      ]
+    },
+    {
+      "name": "capihuara",
+      "countries": [
+        "bolivia"
+      ]
+    },
+    {
+      "name": "capincho",
+      "countries": [
+        "argentina",
+        "ecuador",
+        "paraguay",
+        "uruguay"
+      ]
+    },
+    {
+      "name": "capivara",
+      "countries": [
+        "brasil"
+      ]
+    },
+    {
+      "name": "carpincho",
+      "countries": [
+        "argentina",
+        "bolivia",
+        "ecuador",
+        "paraguay",
+        "perú",
+        "uruguay"
+      ]
+    },
+    {
+      "name": "chancho de agua",
+      "countries": [
+        "argentina"
+      ]
+    },
+    {
+      "name": "chigüire",
+      "countries": [
+        "venezuela"
+      ]
+    },
+    {
+      "name": "chigüiro",
+      "countries": [
+        "colombia"
+      ]
+    },
+    {
+      "name": "jomo",
+      "countries": [
+        "colombia"
+      ]
+    },
+    {
+      "name": "kapi'yvá",
+      "countries": [
+        "paraguay"
+      ]
+    },
+    {
+      "name": "paqui",
+      "countries": [
+        "colombia"
+      ]
+    },
+    {
+      "name": "piro-piro",
+      "countries": [
+        "venezuela"
+      ]
+    },
+    {
+      "name": "ponche",
+      "countries": [
+        "colombia"
+      ]
+    },
+    {
+      "name": "poncho",
+      "countries": [
+        "panamá",
+        "paraguay"
+      ]
+    },
+    {
+      "name": "ronsoco",
+      "countries": [
+        "perú"
+      ]
+    },
+    {
+      "name": "samani",
+      "countries": [
+        "perú"
+      ]
+    }
+  ],
+  "countries": [
+    {
+      "name": "Argentina",
+      "continent": "South America",
+      "flagIcon": "🇦🇷"
+    },
+    {
+      "name": "Bolivia",
+      "continent": "South America",
+      "flagIcon": "🇧🇴"
+    },
+    {
+      "name": "Brazil",
+      "continent": "South America",
+      "flagIcon": "🇧🇷"
+    },
+    {
+      "name": "Colombia",
+      "continent": "South America",
+      "flagIcon": "🇨🇴"
+    },
+    {
+      "name": "Ecuador",
+      "continent": "South America",
+      "flagIcon": "🇪🇨"
+    },
+    {
+      "name": "Panama",
+      "continent": "North America",
+      "flagIcon": "🇵🇦"
+    },
+    {
+      "name": "Paraguay",
+      "continent": "South America",
+      "flagIcon": "🇵🇾"
+    },
+    {
+      "name": "Peru",
+      "continent": "South America",
+      "flagIcon": "🇵🇪"
+    },
+    {
+      "name": "Uruguay",
+      "continent": "South America",
+      "flagIcon": "🇺🇾"
+    },
+    {
+      "name": "Venezuela",
+      "continent": "South America",
+      "flagIcon": "🇻🇪"
+    }
+  ],
+  "food": [
+    {
+      "food": "Pasto",
+      "scientificName": "Poaceae (diversas especies)",
+      "countries": [
+        "Argentina",
+        "Bolivia",
+        "Brazil",
+        "Colombia",
+        "Ecuador",
+        "Panama",
+        "Paraguay",
+        "Peru",
+        "Uruguay",
+        "Venezuela"
+      ]
+    },
+    {
+      "food": "Caña de azúcar",
+      "scientificName": "Saccharum officinarum",
+      "countries": [
+        "Brazil",
+        "Colombia",
+        "Peru",
+        "Paraguay",
+        "Bolivia",
+        "Ecuador",
+        "Venezuela"
+      ]
+    },
+    {
+      "food": "Frutas silvestres",
+      "scientificName": "Diversas especies de árboles frutales nativos",
+      "countries": [
+        "Colombia",
+        "Brazil",
+        "Peru",
+        "Ecuador",
+        "Venezuela",
+        "Bolivia"
+      ]
+    },
+    {
+      "food": "Nenúfares",
+      "scientificName": "Nymphaea spp.",
+      "countries": [
+        "Brazil",
+        "Peru",
+        "Colombia",
+        "Venezuela",
+        "Ecuador"
+      ]
+    },
+    {
+      "food": "Jacinto de agua",
+      "scientificName": "Eichhornia crassipes",
+      "countries": [
+        "Brazil",
+        "Paraguay",
+        "Argentina",
+        "Bolivia",
+        "Uruguay"
+      ]
+    },
+    {
+      "food": "Totora",
+      "scientificName": "Schoenoplectus californicus",
+      "countries": [
+        "Peru",
+        "Bolivia",
+        "Ecuador"
+      ]
+    },
+    {
+      "food": "Maíz",
+      "scientificName": "Zea mays",
+      "countries": [
+        "Argentina",
+        "Brazil",
+        "Paraguay",
+        "Colombia",
+        "Peru",
+        "Venezuela"
+      ]
+    },
+    {
+      "food": "Yuca",
+      "scientificName": "Manihot esculenta",
+      "countries": [
+        "Brazil",
+        "Colombia",
+        "Ecuador",
+        "Peru",
+        "Venezuela",
+        "Bolivia"
+      ]
+    },
+    {
+      "food": "Plátano",
+      "scientificName": "Musa spp.",
+      "countries": [
+        "Colombia",
+        "Ecuador",
+        "Panama",
+        "Venezuela",
+        "Peru"
+      ]
+    }
+  ],
+  "habitats": [
+    {
+      "habitat": "Pantanos",
+      "description": "Zonas húmedas con vegetación densa y suelos encharcados, ideales para el descanso y la alimentación del capibara.",
+      "freshwaterAssociated": true
+    },
+    {
+      "habitat": "Riberas de ríos",
+      "description": "Orillas de ríos con abundante vegetación acuática y acceso constante al agua.",
+      "freshwaterAssociated": true
+    },
+    {
+      "habitat": "Lagos y lagunas",
+      "description": "Cuerpos de agua tranquilos rodeados de hierbas y arbustos donde los capibaras pueden nadar y buscar alimento.",
+      "freshwaterAssociated": true
+    },
+    {
+      "habitat": "Estanques artificiales",
+      "description": "Cuerpos de agua creados por humanos en áreas rurales o de cría, utilizados por capibaras domesticados o en semilibertad.",
+      "freshwaterAssociated": true
+    },
+    {
+      "habitat": "Sabanas húmedas",
+      "description": "Regiones abiertas con presencia estacional de agua y vegetación baja, donde los capibaras pueden pastar.",
+      "freshwaterAssociated": true
+    },
+    {
+      "habitat": "Bosques tropicales inundables",
+      "description": "Zonas de bosque que se inundan periódicamente, proporcionando alimento y refugio natural.",
+      "freshwaterAssociated": true
+    },
+    {
+      "habitat": "Campos agrícolas cercanos a agua",
+      "description": "Zonas de cultivo donde encuentran pastos, caña o yuca, especialmente si están cerca de cuerpos de agua.",
+      "freshwaterAssociated": true
+    }
+  ],
+  "activities": [
+    {
+      "activity": "Nadar",
+      "description": "Actividad fundamental para su regulación térmica y escape de depredadores. Son excelentes nadadores.",
+      "type": "individual o social",
+      "seasonalPattern": {
+        "frequency": "Alta en verano y climas cálidos",
+        "timeOfDay": "Durante el día, especialmente al mediodía",
+        "climateInfluence": "Aumenta con temperaturas altas"
+      },
+      "averageDuration": "1 a 2 horas al día",
+      "biologicalImportance": "alta",
+      "energyExpenditure": "medio",
+      "riskLevel": "bajo",
+      "relationWithOtherAnimals": "Pueden compartir cuerpos de agua con aves acuáticas, tortugas o caimanes.",
+      "humanInfluence": "La contaminación del agua o canalización de ríos puede limitar esta actividad."
+    },
+    {
+      "activity": "Pastorear",
+      "description": "Buscar y comer pasto, hierbas y plantas acuáticas, especialmente al amanecer y atardecer.",
+      "type": "social",
+      "seasonalPattern": {
+        "frequency": "Constante durante todo el año",
+        "timeOfDay": "Amanecer y atardecer",
+        "climateInfluence": "Disminuye en lluvias intensas o calor extremo"
+      },
+      "averageDuration": "3 a 5 horas al día",
+      "biologicalImportance": "alta",
+      "energyExpenditure": "medio",
+      "riskLevel": "medio",
+      "relationWithOtherAnimals": "Puede coexistir pacíficamente con aves y otros herbívoros como tapires o venados.",
+      "humanInfluence": "La expansión agrícola puede reducir su acceso a pastos naturales."
+    },
+    {
+      "activity": "Descansar",
+      "description": "Pasan muchas horas acostados o recostados en la sombra, especialmente durante el día.",
+      "type": "social",
+      "seasonalPattern": {
+        "frequency": "Alta en verano",
+        "timeOfDay": "Durante el mediodía",
+        "climateInfluence": "Aumenta con temperaturas elevadas"
+      },
+      "averageDuration": "6 a 8 horas al día",
+      "biologicalImportance": "alta",
+      "energyExpenditure": "bajo",
+      "riskLevel": "bajo",
+      "relationWithOtherAnimals": "Frecuentemente comparten espacios con aves o reptiles, como iguanas.",
+      "humanInfluence": "La deforestación reduce zonas de sombra y descanso."
+    },
+    {
+      "activity": "Comunicarse",
+      "description": "Emiten sonidos como silbidos, gruñidos y chillidos para comunicarse entre ellos.",
+      "type": "social",
+      "seasonalPattern": {
+        "frequency": "Constante",
+        "timeOfDay": "Todo el día",
+        "climateInfluence": "Poco influenciado"
+      },
+      "averageDuration": "Frecuente en pequeños intervalos",
+      "biologicalImportance": "media",
+      "energyExpenditure": "bajo",
+      "riskLevel": "bajo",
+      "relationWithOtherAnimals": "Su vocalización rara vez afecta o interactúa con otras especies.",
+      "humanInfluence": "El ruido urbano puede interferir en su comunicación."
+    },
+    {
+      "activity": "Marcar territorio",
+      "description": "Usan glándulas de olor para marcar su territorio y mantener jerarquías dentro del grupo.",
+      "type": "individual",
+      "seasonalPattern": {
+        "frequency": "Más común en época reproductiva",
+        "timeOfDay": "Variable",
+        "climateInfluence": "Asociado al ciclo reproductivo más que al clima"
+      },
+      "averageDuration": "Ocasionalmente durante el día",
+      "biologicalImportance": "media",
+      "energyExpenditure": "medio",
+      "riskLevel": "medio",
+      "relationWithOtherAnimals": "Disuade a otros machos, pero no a depredadores.",
+      "humanInfluence": "El confinamiento en espacios pequeños interrumpe el comportamiento de marcaje."
+    },
+    {
+      "activity": "Acicalarse",
+      "description": "Se limpian con la lengua y los dientes. A veces se acicalan entre ellos como comportamiento social.",
+      "type": "individual o social",
+      "seasonalPattern": {
+        "frequency": "Moderada",
+        "timeOfDay": "Durante el descanso",
+        "climateInfluence": "Ligero aumento en temporadas húmedas"
+      },
+      "averageDuration": "30 minutos a 1 hora al día",
+      "biologicalImportance": "media",
+      "energyExpenditure": "bajo",
+      "riskLevel": "bajo",
+      "relationWithOtherAnimals": "Es un comportamiento entre miembros del mismo grupo.",
+      "humanInfluence": "El estrés por interacción humana puede reducir esta conducta social."
+    },
+    {
+      "activity": "Vigilar",
+      "description": "Uno o varios capibaras se mantienen alerta mientras otros descansan o se alimentan.",
+      "type": "social",
+      "seasonalPattern": {
+        "frequency": "Constante",
+        "timeOfDay": "Todo el día",
+        "climateInfluence": "No influenciado"
+      },
+      "averageDuration": "Intermitente durante el día",
+      "biologicalImportance": "alta",
+      "energyExpenditure": "medio",
+      "riskLevel": "bajo",
+      "relationWithOtherAnimals": "Su vigilancia alerta indirectamente a otras especies que comparten hábitat.",
+      "humanInfluence": "Presencia humana constante puede aumentar su estado de alerta crónica."
+    },
+    {
+      "activity": "Copular",
+      "description": "El apareamiento suele darse en el agua. Es parte del comportamiento reproductivo.",
+      "type": "individual",
+      "seasonalPattern": {
+        "frequency": "Alta durante la estación húmeda",
+        "timeOfDay": "Variable",
+        "climateInfluence": "Muy influenciado por lluvias"
+      },
+      "averageDuration": "Minutos por evento",
+      "biologicalImportance": "alta",
+      "energyExpenditure": "medio",
+      "riskLevel": "medio",
+      "relationWithOtherAnimals": "Durante este período los machos pueden mostrarse más agresivos hacia otros.",
+      "humanInfluence": "El cautiverio o perturbaciones humanas pueden reducir la tasa reproductiva."
+    },
+    {
+      "activity": "Correr",
+      "description": "Pueden correr rápidamente al detectar peligro, aunque su resistencia es limitada.",
+      "type": "individual",
+      "seasonalPattern": {
+        "frequency": "Esporádica",
+        "timeOfDay": "Cuando detectan amenazas",
+        "climateInfluence": "No influenciado"
+      },
+      "averageDuration": "Pocos minutos por evento",
+      "biologicalImportance": "alta",
+      "energyExpenditure": "alto",
+      "riskLevel": "alto",
+      "relationWithOtherAnimals": "Frecuentemente huyen junto con otras especies presas.",
+      "humanInfluence": "La caza o tráfico puede provocar huidas peligrosas o lesiones."
+    },
+    {
+      "activity": "Sumergirse",
+      "description": "Pueden permanecer varios minutos bajo el agua como método de camuflaje o escape.",
+      "type": "individual",
+      "seasonalPattern": {
+        "frequency": "Alta en verano y durante amenazas",
+        "timeOfDay": "Cualquier momento del día",
+        "climateInfluence": "Aumenta en calor extremo o presencia de depredadores"
+      },
+      "averageDuration": "Hasta 5 minutos por inmersión",
+      "biologicalImportance": "alta",
+      "energyExpenditure": "medio",
+      "riskLevel": "medio",
+      "relationWithOtherAnimals": "Puede evitar a depredadores acuáticos; algunas veces comparte el agua con ellos.",
+      "humanInfluence": "La alteración de cuerpos de agua puede reducir esta habilidad de escape."
+    }
   ]
-} 
+}
