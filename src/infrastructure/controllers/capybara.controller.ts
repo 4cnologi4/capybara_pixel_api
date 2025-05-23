@@ -1,15 +1,26 @@
-import { Controller, Get, Query, Param } from '@nestjs/common';
+import { Controller, Get, Param } from '@nestjs/common';
 import { CapybaraService } from '../../application/services/capybara.service';
-import { CapybaraFoodDto, CapybaraHabitsDto, CapybaraResponseDto, CapybaraCountriesDto } from '../../domain/dtos/capybara-response.dto';
+import { CapybaraNamesDto, CapybaraFoodDto, CapybaraHabitsDto, CapybaraResponseDto, CapybaraCountriesDto } from '../../domain/dtos/capybara-response.dto';
 
-@Controller('capybara')
+@Controller({
+    path: 'capybara',
+    version: ['1'] // ['1', '2'] // Supports both versions
+  })
+  
 export class CapybaraController {
     constructor(private readonly service: CapybaraService) { }
 
+    /* @Version('1')
     @Get()
-    async getCapybara(@Query('type') type: '2d' | '3d' = '2d'): Promise<CapybaraResponseDto> {
-        return this.service.getCapybara(type);
+    getV1() {
+        return { message: 'Legacy v1 response' };
     }
+
+    @Version('2')
+    @Get()
+    getV2() {
+        return { message: 'New v2 response with improvements' };
+    } */
 
     @Get('habits')
     async getHabits(): Promise<CapybaraHabitsDto> {
@@ -24,6 +35,11 @@ export class CapybaraController {
     @Get('countries')
     async getCountries(): Promise<CapybaraCountriesDto> {
         return this.service.getCountries();
+    }
+
+    @Get('names')
+    async getNames(): Promise<CapybaraNamesDto[]> {
+        return this.service.getNames();
     }
 
     @Get(':id')

@@ -1,0 +1,21 @@
+{
+  "names": [
+    { "name": "capibara", "countries": ["argentina", "bolivia", "ecuador", "panamá", "paraguay", "perú", "uruguay"] },
+    { "name": "capiguara", "countries": ["bolivia"] },
+    { "name": "capihuara", "countries": ["bolivia"] },
+    { "name": "capincho", "countries": ["argentina", "ecuador", "paraguay", "uruguay"] },
+    { "name": "capivara", "countries": ["brasil"] },
+    { "name": "carpincho", "countries": ["argentina", "bolivia", "ecuador", "paraguay", "perú", "uruguay"] },
+    { "name": "chancho de agua", "countries": ["argentina"] },
+    { "name": "chigüire", "countries": ["venezuela"] },
+    { "name": "chigüiro", "countries": ["colombia"] },
+    { "name": "jomo", "countries": ["colombia"] },
+    { "name": "kapi'yvá", "countries": ["paraguay"] },
+    { "name": "paqui", "countries": ["colombia"] },
+    { "name": "piro-piro", "countries": ["venezuela"] },
+    { "name": "ponche", "countries": ["colombia"] },
+    { "name": "poncho", "countries": ["panamá", "paraguay"] },
+    { "name": "ronsoco", "countries": ["perú"] },
+    { "name": "samani", "countries": ["perú"] }
+  ]
+} 

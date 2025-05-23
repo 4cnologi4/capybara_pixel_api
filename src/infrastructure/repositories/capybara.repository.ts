@@ -1,9 +1,21 @@
 import { Injectable } from '@nestjs/common';
-import { CapybaraRepository } from '../../domain/interfaces/capybara.repository.interface';
-import { CapybaraEntity } from '../../domain/entities/capybara.entity';
+import { ICapybaraRepository } from '../../domain/interfaces/capybara.repository.interface';
+import { CapybaraEntity, CapybaraNameEntity } from '../../domain/entities/capybara.entity';
+import * as fs from 'fs';
+import * as path from 'path';
 
 @Injectable()
-export class MockCapybaraRepository implements CapybaraRepository {
+export class CapybaraRepository implements ICapybaraRepository {
+    private readonly data: { names: CapybaraNameEntity[] };
+
+    constructor() {
+        const dataPath = path.join(
+            process.cwd(), // Use root project directory
+            'src/infrastructure/data/capybara-data.json' // Relative path from root
+        );
+        this.data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+    }
+
     async getHabits(): Promise<Pick<CapybaraEntity, 'habits' | 'imageUrl'>> {
         return Promise.resolve({
             habits: ['swimming', 'sunbathing', 'grazing'],
@@ -52,6 +64,7 @@ export class MockCapybaraRepository implements CapybaraRepository {
         } as CapybaraEntity;
         return Promise.resolve(id === '1' ? mockCapybara : null);
     }
-
-    // Implement other methods similarly...
+    async getNames(): Promise<CapybaraNameEntity[]> {
+        return Promise.resolve(this.data.names);
+    }
 }

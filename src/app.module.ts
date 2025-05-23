@@ -5,7 +5,7 @@ import { UserService } from './application/services/user.service';
 import { MongoUserRepository } from './infrastructure/repositories/mongo.user.repository';
 import { CapybaraController } from './infrastructure/controllers/capybara.controller';
 import { CapybaraService } from './application/services/capybara.service';
-import { MockCapybaraRepository } from './infrastructure/repositories/mock-capybara.repository';
+import { CapybaraRepository } from './infrastructure/repositories/capybara.repository';
 import { USER_REPOSITORY, CAPYBARA_REPOSITORY } from './core/constants/repository-tokens.constants';
 
 @Module({
@@ -21,7 +21,7 @@ import { USER_REPOSITORY, CAPYBARA_REPOSITORY } from './core/constants/repositor
     CapybaraService,
     {
       provide: CAPYBARA_REPOSITORY,
-      useClass: MockCapybaraRepository,
+      useClass: CapybaraRepository,
     },
   ],
 })
