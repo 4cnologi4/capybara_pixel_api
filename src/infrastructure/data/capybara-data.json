@@ -1,6 +1,7 @@
 {
   "names": [
     {
+      "id": 1,
       "name": "capibara",
       "countries": [
         "argentina",
@@ -13,18 +14,21 @@
       ]
     },
     {
+      "id": 2,
       "name": "capiguara",
       "countries": [
         "bolivia"
       ]
     },
     {
+      "id": 3,
       "name": "capihuara",
       "countries": [
         "bolivia"
       ]
     },
     {
+      "id": 4,
       "name": "capincho",
       "countries": [
         "argentina",
@@ -34,12 +38,14 @@
       ]
     },
     {
+      "id": 5,
       "name": "capivara",
       "countries": [
         "brasil"
       ]
     },
     {
+      "id": 6,
       "name": "carpincho",
       "countries": [
         "argentina",
@@ -51,54 +57,63 @@
       ]
     },
     {
+      "id": 7,
       "name": "chancho de agua",
       "countries": [
         "argentina"
       ]
     },
     {
+      "id": 8,
       "name": "chigüire",
       "countries": [
         "venezuela"
       ]
     },
     {
+      "id": 9,
       "name": "chigüiro",
       "countries": [
         "colombia"
       ]
     },
     {
+      "id": 10,
       "name": "jomo",
       "countries": [
         "colombia"
       ]
     },
     {
+      "id": 11,
       "name": "kapi'yvá",
       "countries": [
         "paraguay"
       ]
     },
     {
+      "id": 12,
       "name": "paqui",
       "countries": [
         "colombia"
       ]
     },
     {
+      "id": 13,
       "name": "piro-piro",
       "countries": [
         "venezuela"
       ]
     },
     {
+      "id": 14,
       "name": "ponche",
       "countries": [
         "colombia"
       ]
     },
     {
+      "id": 15,
       "name": "poncho",
       "countries": [
         "panamá",
@@ -106,12 +121,14 @@
       ]
     },
     {
+      "id": 16,
       "name": "ronsoco",
       "countries": [
         "perú"
       ]
     },
     {
+      "id": 17,
       "name": "samani",
       "countries": [
         "perú"
@@ -120,51 +137,61 @@
   ],
   "countries": [
     {
+      "id": 1,
       "name": "Argentina",
       "continent": "South America",
       "flagIcon": "🇦🇷"
     },
     {
+      "id": 2,
       "name": "Bolivia",
       "continent": "South America",
       "flagIcon": "🇧🇴"
     },
     {
+      "id": 3,
       "name": "Brazil",
       "continent": "South America",
       "flagIcon": "🇧🇷"
     },
     {
+      "id": 4,
       "name": "Colombia",
       "continent": "South America",
       "flagIcon": "🇨🇴"
     },
     {
+      "id": 5,
       "name": "Ecuador",
       "continent": "South America",
       "flagIcon": "🇪🇨"
     },
     {
+      "id": 6,
       "name": "Panama",
       "continent": "North America",
       "flagIcon": "🇵🇦"
     },
     {
+      "id": 7,
       "name": "Paraguay",
       "continent": "South America",
       "flagIcon": "🇵🇾"
     },
     {
+      "id": 8,
       "name": "Peru",
       "continent": "South America",
       "flagIcon": "🇵🇪"
     },
     {
+      "id": 9,
       "name": "Uruguay",
       "continent": "South America",
       "flagIcon": "🇺🇾"
     },
     {
+      "id": 10,
       "name": "Venezuela",
       "continent": "South America",
       "flagIcon": "🇻🇪"
@@ -172,6 +199,7 @@
   ],
   "food": [
     {
+      "id": 1,
       "food": "Pasto",
       "scientificName": "Poaceae (diversas especies)",
       "countries": [
@@ -188,6 +216,7 @@
       ]
     },
     {
+      "id": 2,
       "food": "Caña de azúcar",
       "scientificName": "Saccharum officinarum",
       "countries": [
@@ -201,6 +230,7 @@
       ]
     },
     {
+      "id": 3,
       "food": "Frutas silvestres",
       "scientificName": "Diversas especies de árboles frutales nativos",
       "countries": [
@@ -213,6 +243,7 @@
       ]
     },
     {
+      "id": 4,
       "food": "Nenúfares",
       "scientificName": "Nymphaea spp.",
       "countries": [
@@ -224,6 +255,7 @@
       ]
     },
     {
+      "id": 5,
       "food": "Jacinto de agua",
       "scientificName": "Eichhornia crassipes",
       "countries": [
@@ -235,6 +267,7 @@
       ]
     },
     {
+      "id": 6,
       "food": "Totora",
       "scientificName": "Schoenoplectus californicus",
       "countries": [
@@ -244,6 +277,7 @@
       ]
     },
     {
+      "id": 7,
       "food": "Maíz",
       "scientificName": "Zea mays",
       "countries": [
@@ -256,6 +290,7 @@
       ]
     },
     {
+      "id": 8,
       "food": "Yuca",
       "scientificName": "Manihot esculenta",
       "countries": [
@@ -268,6 +303,7 @@
       ]
     },
     {
+      "id": 9,
       "food": "Plátano",
       "scientificName": "Musa spp.",
       "countries": [
@@ -281,36 +317,43 @@
   ],
   "habitats": [
     {
+      "id": 1,
       "habitat": "Pantanos",
       "description": "Zonas húmedas con vegetación densa y suelos encharcados, ideales para el descanso y la alimentación del capibara.",
       "freshwaterAssociated": true
     },
     {
+      "id": 2,
       "habitat": "Riberas de ríos",
       "description": "Orillas de ríos con abundante vegetación acuática y acceso constante al agua.",
       "freshwaterAssociated": true
     },
     {
+      "id": 3,
       "habitat": "Lagos y lagunas",
       "description": "Cuerpos de agua tranquilos rodeados de hierbas y arbustos donde los capibaras pueden nadar y buscar alimento.",
       "freshwaterAssociated": true
     },
     {
+      "id": 4,
       "habitat": "Estanques artificiales",
       "description": "Cuerpos de agua creados por humanos en áreas rurales o de cría, utilizados por capibaras domesticados o en semilibertad.",
       "freshwaterAssociated": true
     },
     {
+      "id": 5,
       "habitat": "Sabanas húmedas",
       "description": "Regiones abiertas con presencia estacional de agua y vegetación baja, donde los capibaras pueden pastar.",
       "freshwaterAssociated": true
     },
     {
+      "id": 6,
       "habitat": "Bosques tropicales inundables",
       "description": "Zonas de bosque que se inundan periódicamente, proporcionando alimento y refugio natural.",
       "freshwaterAssociated": true
     },
     {
+      "id": 7,
       "habitat": "Campos agrícolas cercanos a agua",
       "description": "Zonas de cultivo donde encuentran pastos, caña o yuca, especialmente si están cerca de cuerpos de agua.",
       "freshwaterAssociated": true
@@ -318,6 +361,7 @@
   ],
   "activities": [
     {
+      "id": 1,
       "activity": "Nadar",
       "description": "Actividad fundamental para su regulación térmica y escape de depredadores. Son excelentes nadadores.",
       "type": "individual o social",
@@ -334,6 +378,7 @@
       "humanInfluence": "La contaminación del agua o canalización de ríos puede limitar esta actividad."
     },
     {
+      "id": 2,
       "activity": "Pastorear",
       "description": "Buscar y comer pasto, hierbas y plantas acuáticas, especialmente al amanecer y atardecer.",
       "type": "social",
@@ -350,6 +395,7 @@
       "humanInfluence": "La expansión agrícola puede reducir su acceso a pastos naturales."
     },
     {
+      "id": 3,
       "activity": "Descansar",
       "description": "Pasan muchas horas acostados o recostados en la sombra, especialmente durante el día.",
       "type": "social",
@@ -366,6 +412,7 @@
       "humanInfluence": "La deforestación reduce zonas de sombra y descanso."
     },
     {
+      "id": 4,
       "activity": "Comunicarse",
       "description": "Emiten sonidos como silbidos, gruñidos y chillidos para comunicarse entre ellos.",
       "type": "social",
@@ -382,6 +429,7 @@
       "humanInfluence": "El ruido urbano puede interferir en su comunicación."
     },
     {
+      "id": 5,
       "activity": "Marcar territorio",
       "description": "Usan glándulas de olor para marcar su territorio y mantener jerarquías dentro del grupo.",
       "type": "individual",
@@ -398,6 +446,7 @@
       "humanInfluence": "El confinamiento en espacios pequeños interrumpe el comportamiento de marcaje."
     },
     {
+      "id": 6,
       "activity": "Acicalarse",
       "description": "Se limpian con la lengua y los dientes. A veces se acicalan entre ellos como comportamiento social.",
       "type": "individual o social",
@@ -414,6 +463,7 @@
       "humanInfluence": "El estrés por interacción humana puede reducir esta conducta social."
     },
     {
+      "id": 7,
       "activity": "Vigilar",
       "description": "Uno o varios capibaras se mantienen alerta mientras otros descansan o se alimentan.",
       "type": "social",
@@ -430,6 +480,7 @@
       "humanInfluence": "Presencia humana constante puede aumentar su estado de alerta crónica."
     },
     {
+      "id": 8,
       "activity": "Copular",
       "description": "El apareamiento suele darse en el agua. Es parte del comportamiento reproductivo.",
       "type": "individual",
@@ -446,6 +497,7 @@
       "humanInfluence": "El cautiverio o perturbaciones humanas pueden reducir la tasa reproductiva."
     },
     {
+      "id": 9,
       "activity": "Correr",
       "description": "Pueden correr rápidamente al detectar peligro, aunque su resistencia es limitada.",
       "type": "individual",
@@ -462,6 +514,7 @@
       "humanInfluence": "La caza o tráfico puede provocar huidas peligrosas o lesiones."
     },
     {
+      "id": 10,
       "activity": "Sumergirse",
       "description": "Pueden permanecer varios minutos bajo el agua como método de camuflaje o escape.",
       "type": "individual",

@@ -8,4 +8,9 @@ export interface ICapybaraRepository {
   getFood(): Promise<CapybaraFoodEntity[]>;
   getCountries(): Promise<CapybaraCountryEntity[]>;
   getNames(): Promise<CapybaraNameEntity[]>;
+  getNameById(id: number): Promise<CapybaraNameEntity | null>;
+  getCountryById(id: number): Promise<CapybaraCountryEntity | null>;
+  getHabitatById(id: number): Promise<CapybaraHabitatEntity | null>;
+  getActivityById(id: number): Promise<CapybaraActivitiesEntity | null>;
+  getFoodById(id: number): Promise<CapybaraFoodEntity | null>;
 }

@@ -36,11 +36,40 @@ export class CapybaraRepository implements ICapybaraRepository {
 
     async getCountries(): Promise<CapybaraCountryEntity[]> {
         return Promise.resolve(this.data.countries);
+    }    
+
+    async getNames(): Promise<CapybaraNameEntity[]> {
+        return Promise.resolve(this.data.names);
+    }
+
+    async getNameById(id: number): Promise<CapybaraNameEntity | null> {
+        const item = this.data.names.find(item => item.id === id);
+        return Promise.resolve(item || null);
+    }
+
+    async getCountryById(id: number): Promise<CapybaraCountryEntity | null> {
+        const item = this.data.countries.find(item => item.id === id);
+        return Promise.resolve(item || null);
+    }
+
+    async getHabitatById(id: number): Promise<CapybaraHabitatEntity | null> {
+        const item = this.data.habitats.find(item => item.id === id);
+        return Promise.resolve(item || null);
+    }
+
+    async getActivityById(id: number): Promise<CapybaraActivitiesEntity | null> {
+        const item = this.data.activities.find(item => item.id === id);
+        return Promise.resolve(item || null);
+    }
+
+    async getFoodById(id: number): Promise<CapybaraFoodEntity | null> {
+        const item = this.data.food.find(item => item.id === id);
+        return Promise.resolve(item || null);
     }
 
     async getCapybara(type: '2d' | '3d'): Promise<CapybaraEntity> {
         return {
-            id: '1',
+            id: 1,
             type,
             imageUrl: `https://example.com/capybara-${type}.png`,
             details: 'Friendly rodent from South America',
@@ -55,7 +84,7 @@ export class CapybaraRepository implements ICapybaraRepository {
 
     async getById(id: string): Promise<CapybaraEntity | null> {
         const mockCapybara = {
-            id: '1',
+            id: 1,
             type: '2d',
             imageUrl: 'https://example.com/capybara-2d.png',
             details: 'Friendly rodent from South America',
@@ -67,9 +96,5 @@ export class CapybaraRepository implements ICapybaraRepository {
             nativeCountries: ['Brazil', 'Colombia', 'Venezuela'],
         } as CapybaraEntity;
         return Promise.resolve(id === '1' ? mockCapybara : null);
-    }
-
-    async getNames(): Promise<CapybaraNameEntity[]> {
-        return Promise.resolve(this.data.names);
     }
 }

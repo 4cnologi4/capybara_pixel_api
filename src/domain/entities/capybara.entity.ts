@@ -1,5 +1,5 @@
 export class CapybaraEntity {
-    id: string;
+    id: number;
     type: '2d' | '3d';
     imageUrl: string;
     details: string;
@@ -12,29 +12,34 @@ export class CapybaraEntity {
 }
 
 export class CapybaraNameEntity {
+    id: number;
     name: string;
     countries: string[];
 }
 
 export class CapybaraCountryEntity {
+    id: number;
     name: string;
     continent: string;
     flagIcon: string;
 }
 
 export class CapybaraFoodEntity {
+    id: number;
     food: string;
     scientificName: string;
     countries: string[];
 }
 
 export class CapybaraHabitatEntity {
+    id: number;
     habitat: string;
     description: string;
     freshwaterAssociated: boolean;
 }
 
 export class CapybaraActivitiesEntity {
+    id: number;
     activity: string;
     description: string;
     type: 'individual' | 'social' | 'individual o social';

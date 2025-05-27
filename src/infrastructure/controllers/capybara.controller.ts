@@ -22,34 +22,60 @@ export class CapybaraController {
         return { message: 'New v2 response with improvements' };
     } */
 
-    @Get('habitats')
-    async getHabits(): Promise<CapybaraHabitatDto[]> {
-        return this.service.getHabits();
-    }
-
-    @Get('activities')
-    async getActivities(): Promise<CapybaraActivitiesDto[]> {
-        return this.service.getActivities();
-    }
-
-    @Get('food')
-    async getFood(): Promise<CapybaraFoodDto[]> {
-        return this.service.getFood();
+    // Catalog endpoints (static paths first)
+    @Get('names')
+    async getAllNames() {
+        return this.service.getAllNames();
     }
 
     @Get('countries')
-    async getCountries(): Promise<CapybaraCountriesDto[]> {
-        return this.service.getCountries();
+    async getAllCountries() {
+        return this.service.getAllCountries();
     }
 
-    @Get('names')
-    async getNames(): Promise<CapybaraNamesDto[]> {
-        return this.service.getNames();
+    @Get('habitats')
+    async getAllHabitats() {
+        return this.service.getAllHabitats();
+    }
+
+    @Get('activities')
+    async getAllActivities() {
+        return this.service.getAllActivities();
+    }
+
+    @Get('food')
+    async getAllFood() {
+        return this.service.getAllFood();
+    }
+
+    // Single resource endpoints (parameterized paths after)
+    @Get('names/:id')
+    async getNameById(@Param('id') id: string) {
+        return this.service.getNameById(parseInt(id));
+    }
+
+    @Get('countries/:id')
+    async getCountryById(@Param('id') id: string) {
+        return this.service.getCountryById(parseInt(id));
+    }
+
+    @Get('habitats/:id')
+    async getHabitatById(@Param('id') id: string) {
+        return this.service.getHabitatById(parseInt(id));
+    }
+
+    @Get('activities/:id')
+    async getActivityById(@Param('id') id: string) {
+        return this.service.getActivityById(parseInt(id));
+    }
+
+    @Get('food/:id')
+    async getFoodById(@Param('id') id: string) {
+        return this.service.getFoodById(parseInt(id));
     }
 
     @Get(':id')
     async getById(@Param('id') id: string): Promise<CapybaraResponseDto | null> {
         return this.service.getById(id);
     }
-
 } 
