@@ -1,10 +1,13 @@
 import { NestFactory } from '@nestjs/core';
 import { VersioningType } from '@nestjs/common';
 import { AppModule } from './app.module';
+import type { VercelRequest, VercelResponse } from '@vercel/node';
+
+let server: any;
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-
+  
   // Enable URI versioning (e.g., /v1/route, /v2/route)
   app.enableVersioning({
     type: VersioningType.URI,
@@ -18,6 +21,16 @@ async function bootstrap() {
     credentials: true, // Allow cookies/sessions
   });
 
-  await app.listen(3000);
+  await app.init();
+  return app.getHttpAdapter().getInstance();
 }
-bootstrap();
+
+export default async function handler(
+  req: VercelRequest,
+  res: VercelResponse
+) {
+  if (!server) {
+    server = await bootstrap();
+  }
+  return server(req, res);
+}
