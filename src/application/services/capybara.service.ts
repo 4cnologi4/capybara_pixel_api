@@ -1,7 +1,7 @@
 import { Injectable, Inject } from '@nestjs/common';
 import { ICapybaraRepository } from '../../domain/interfaces/capybara.repository.interface';
 import { CapybaraNamesDto, CapybaraFoodDto, CapybaraResponseDto, CapybaraCountriesDto, CapybaraHabitatDto, CapybaraActivitiesDto } from '../../domain/dtos/capybara-response.dto';
-import { CAPYBARA_REPOSITORY } from 'src/core/constants/repository-tokens.constants';
+import { CAPYBARA_REPOSITORY } from '../../core/constants/repository-tokens.constants';
 
 @Injectable()
 export class CapybaraService {

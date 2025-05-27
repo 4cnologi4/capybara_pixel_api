@@ -1,10 +1,18 @@
 {
   "compilerOptions": {
     "module": "commonjs",
+    "target": "ES2021",
+    "declaration": true,
+    "removeComments": true,
     "esModuleInterop": true,
-    "target": "es2017",
     "moduleResolution": "node",
     "outDir": "dist",
-    "strict": true
-  }
+    "strict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictPropertyInitialization": false
+  },
+  "exclude": ["node_modules", "dist", ".vercel"]
 }
