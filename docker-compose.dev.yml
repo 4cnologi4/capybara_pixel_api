@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    container_name: capybara-api
+    ports:
+      - "3000:3000"       # expone el puerto local -> contenedor
+    volumes:
+      - .:/usr/src/app    # monta tu código local dentro del contenedor
+      - /usr/src/app/node_modules # evita conflictos de dependencias
+    command: yarn start     # puedes usar "yarn start" según tu script
